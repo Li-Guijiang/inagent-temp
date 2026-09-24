@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python *)",
+      "Bash(rd *)",
+      "Bash(timeout *)",
+      "Bash(dir *)",
+      "Bash(start *)",
+      "Bash(curl *)",
+      "Bash(echo.)",
+      "Bash(pip install *)",
+      "Bash(del *)",
+      "Bash(run_demo.bat)",
+      "Bash(tasklist)",
+      "Bash(findstr *)",
+      "Bash(netstat *)",
+      "Bash(py *)",
+      "Bash(call *)",
+      "Bash(install_deps.bat)"
+    ]
+  },
+  "mcp_connectors": [
+    {
+      "name": "智能制造设备数据MCP",
+      "type": "http",
+      "url": "http://127.0.0.1:5000/api/device_warn",
+      "method": "GET",
+      "description": "获取车间设备实时动态数据，包含设备ID、名称、功率、温度、振动、告警等级、告警信息"
+    }
+  ],
+  "$version": 4
+}

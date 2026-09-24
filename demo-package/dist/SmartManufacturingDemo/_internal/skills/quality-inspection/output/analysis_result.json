@@ -1,0 +1,517 @@
+{
+  "generated_at": "2026-09-24 09:19:09",
+  "data_time": "2026-09-24 09:19:09",
+  "data_source": "demo(模拟生成)",
+  "summary": {
+    "正常": 8,
+    "预警": 1,
+    "严重": 1,
+    "紧急": 1
+  },
+  "devices": [
+    {
+      "device_id": "TJ-01",
+      "device_name": "电池箱体弧焊产线",
+      "enterprise": "江苏天钧精密技术股份有限公司",
+      "status": "预警",
+      "worst_param": "焊缝缺陷漏检率",
+      "items": [
+        {
+          "param": "焊缝缺陷漏检率",
+          "unit": "%",
+          "value": 1.2,
+          "min_24h": 0.52,
+          "max_24h": 1.2,
+          "avg_24h": 0.72,
+          "over_count_24h": 1,
+          "status": "预警",
+          "normal_low": 0.0,
+          "normal_high": 1.0,
+          "note": "焊接缺陷人工质检漏检风险"
+        },
+        {
+          "param": "焊缝一次通过率",
+          "unit": "%",
+          "value": 97.79,
+          "min_24h": 95.93,
+          "max_24h": 98.03,
+          "avg_24h": 97.47,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 95.0,
+          "normal_high": 100.0,
+          "note": "一次通过率直接反映焊接良率"
+        },
+        {
+          "param": "焊后抽检合格率",
+          "unit": "%",
+          "value": 99.34,
+          "min_24h": 97.98,
+          "max_24h": 99.34,
+          "avg_24h": 98.57,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 97.0,
+          "normal_high": 100.0,
+          "note": "抽查样本合格占比"
+        }
+      ]
+    },
+    {
+      "device_id": "BJ-01",
+      "device_name": "五轴加工中心",
+      "enterprise": "无锡贝斯特精机股份有限公司",
+      "status": "严重",
+      "worst_param": "关键尺寸CPK",
+      "items": [
+        {
+          "param": "关键尺寸合格率",
+          "unit": "%",
+          "value": 99.09,
+          "min_24h": 98.56,
+          "max_24h": 99.29,
+          "avg_24h": 99.0,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 98.0,
+          "normal_high": 100.0,
+          "note": "精密件尺寸一致性关键指标"
+        },
+        {
+          "param": "表面粗糙度抽检合格率",
+          "unit": "%",
+          "value": 97.83,
+          "min_24h": 96.86,
+          "max_24h": 98.94,
+          "avg_24h": 98.08,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 96.0,
+          "normal_high": 100.0,
+          "note": "影响涡轮增压器叶轮精度"
+        },
+        {
+          "param": "关键尺寸CPK",
+          "unit": "-",
+          "value": 1.15,
+          "min_24h": 1.15,
+          "max_24h": 1.85,
+          "avg_24h": 1.66,
+          "over_count_24h": 1,
+          "status": "严重",
+          "normal_low": 1.33,
+          "normal_high": 2.0,
+          "note": "CPK低于1.33工艺能力不足"
+        }
+      ]
+    },
+    {
+      "device_id": "BJ-02",
+      "device_name": "高精度珩磨机",
+      "enterprise": "无锡贝斯特精机股份有限公司",
+      "status": "正常",
+      "worst_param": null,
+      "items": [
+        {
+          "param": "珩磨网纹合格率",
+          "unit": "%",
+          "value": 99.03,
+          "min_24h": 97.94,
+          "max_24h": 99.28,
+          "avg_24h": 98.62,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 97.0,
+          "normal_high": 100.0,
+          "note": "网纹影响缸体密封"
+        },
+        {
+          "param": "孔径公差合格率",
+          "unit": "%",
+          "value": 99.09,
+          "min_24h": 98.59,
+          "max_24h": 99.29,
+          "avg_24h": 99.0,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 98.0,
+          "normal_high": 100.0,
+          "note": "高精度孔一致性"
+        }
+      ]
+    },
+    {
+      "device_id": "HQ-01",
+      "device_name": "通用机器视觉检测线",
+      "enterprise": "苏州禾派阁电子科技有限公司",
+      "status": "正常",
+      "worst_param": null,
+      "items": [
+        {
+          "param": "误检率",
+          "unit": "%",
+          "value": 0.6,
+          "min_24h": 0.45,
+          "max_24h": 1.08,
+          "avg_24h": 0.73,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 1.0,
+          "note": "误检过高需重新标定"
+        },
+        {
+          "param": "漏检率",
+          "unit": "%",
+          "value": 0.3,
+          "min_24h": 0.23,
+          "max_24h": 0.48,
+          "avg_24h": 0.35,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 0.5,
+          "note": "漏检是最严重质量事故"
+        },
+        {
+          "param": "检出率",
+          "unit": "%",
+          "value": 98.65,
+          "min_24h": 97.67,
+          "max_24h": 99.7,
+          "avg_24h": 98.61,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 97.0,
+          "normal_high": 100.0,
+          "note": "检出率达标承诺客户"
+        }
+      ]
+    },
+    {
+      "device_id": "JS-01",
+      "device_name": "AI视觉检测设备（2D/3D）",
+      "enterprise": "苏州聚晟视自动化设备有限公司",
+      "status": "正常",
+      "worst_param": null,
+      "items": [
+        {
+          "param": "检测准确率",
+          "unit": "%",
+          "value": 98.91,
+          "min_24h": 98.46,
+          "max_24h": 99.32,
+          "avg_24h": 98.91,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 98.0,
+          "normal_high": 100.0,
+          "note": "AI模型判级准确度"
+        },
+        {
+          "param": "误检率",
+          "unit": "%",
+          "value": 0.78,
+          "min_24h": 0.57,
+          "max_24h": 1.13,
+          "avg_24h": 0.85,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 1.2,
+          "note": "误检影响产能与客户信任"
+        },
+        {
+          "param": "漏检率",
+          "unit": "%",
+          "value": 0.42,
+          "min_24h": 0.36,
+          "max_24h": 0.75,
+          "avg_24h": 0.56,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 0.8,
+          "note": "深度学习缺陷漏检控制"
+        }
+      ]
+    },
+    {
+      "device_id": "QY-01",
+      "device_name": "UTG超薄玻璃AOI检测设备",
+      "enterprise": "樵弋机器人科技（江阴）有限公司",
+      "status": "正常",
+      "worst_param": null,
+      "items": [
+        {
+          "param": "崩边漏检率",
+          "unit": "%",
+          "value": 0.39,
+          "min_24h": 0.29,
+          "max_24h": 0.46,
+          "avg_24h": 0.36,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 0.5,
+          "note": "崩边缺陷是最高风险项"
+        },
+        {
+          "param": "检出率",
+          "unit": "%",
+          "value": 99.61,
+          "min_24h": 99.31,
+          "max_24h": 99.77,
+          "avg_24h": 99.48,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 99.0,
+          "normal_high": 100.0,
+          "note": "高端光学缺陷检出承诺"
+        },
+        {
+          "param": "误报率",
+          "unit": "%",
+          "value": 0.77,
+          "min_24h": 0.45,
+          "max_24h": 0.87,
+          "avg_24h": 0.7,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 1.0,
+          "note": "误报降低产线效率"
+        }
+      ]
+    },
+    {
+      "device_id": "QY-02",
+      "device_name": "自动收片检测装置",
+      "enterprise": "樵弋机器人科技（江阴）有限公司",
+      "status": "正常",
+      "worst_param": null,
+      "items": [
+        {
+          "param": "收片合格率",
+          "unit": "%",
+          "value": 99.16,
+          "min_24h": 98.59,
+          "max_24h": 99.35,
+          "avg_24h": 98.99,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 98.0,
+          "normal_high": 100.0,
+          "note": "收片良率"
+        },
+        {
+          "param": "缺陷分类准确率",
+          "unit": "%",
+          "value": 99.01,
+          "min_24h": 97.57,
+          "max_24h": 99.31,
+          "avg_24h": 98.44,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 97.0,
+          "normal_high": 100.0,
+          "note": "缺陷分类正确性"
+        }
+      ]
+    },
+    {
+      "device_id": "HG-01",
+      "device_name": "纺织上纱AGV",
+      "enterprise": "江苏赫伽力智能科技有限公司",
+      "status": "正常",
+      "worst_param": null,
+      "items": [
+        {
+          "param": "上纱装配成功定位合格率",
+          "unit": "%",
+          "value": 98.02,
+          "min_24h": 97.82,
+          "max_24h": 99.05,
+          "avg_24h": 98.45,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 97.0,
+          "normal_high": 100.0,
+          "note": "定位偏差导致上纱对位失败"
+        },
+        {
+          "param": "落纱合格率",
+          "unit": "%",
+          "value": 99.19,
+          "min_24h": 98.53,
+          "max_24h": 99.36,
+          "avg_24h": 98.98,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 98.0,
+          "normal_high": 100.0,
+          "note": "落纱良率"
+        }
+      ]
+    },
+    {
+      "device_id": "HG-02",
+      "device_name": "纺织复合移动机器人",
+      "enterprise": "江苏赫伽力智能科技有限公司",
+      "status": "正常",
+      "worst_param": null,
+      "items": [
+        {
+          "param": "装配质量一次合格率",
+          "unit": "%",
+          "value": 97.9,
+          "min_24h": 97.09,
+          "max_24h": 98.68,
+          "avg_24h": 98.02,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 96.0,
+          "normal_high": 100.0,
+          "note": "多工序装配质量"
+        },
+        {
+          "param": "换料工序差错率",
+          "unit": "%",
+          "value": 0.16,
+          "min_24h": 0.13,
+          "max_24h": 0.26,
+          "avg_24h": 0.21,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 0.3,
+          "note": "换纱工序差错控制"
+        }
+      ]
+    },
+    {
+      "device_id": "GT-01",
+      "device_name": "DTiip工业互联网边缘网关",
+      "enterprise": "国投融合（无锡）科技有限公司",
+      "status": "正常",
+      "worst_param": null,
+      "items": [
+        {
+          "param": "质检数据采集完整率",
+          "unit": "%",
+          "value": 99.43,
+          "min_24h": 98.38,
+          "max_24h": 99.5,
+          "avg_24h": 99.02,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 98.0,
+          "normal_high": 100.0,
+          "note": "平台数据完整性"
+        },
+        {
+          "param": "数据质量校验通过率",
+          "unit": "%",
+          "value": 98.56,
+          "min_24h": 97.96,
+          "max_24h": 99.37,
+          "avg_24h": 98.54,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 97.0,
+          "normal_high": 100.0,
+          "note": "数据失真将误导决策"
+        }
+      ]
+    },
+    {
+      "device_id": "FQ-01",
+      "device_name": "非标装配自动化产线",
+      "enterprise": "苏州富强科技有限公司",
+      "status": "紧急",
+      "worst_param": "一次装配合格率",
+      "items": [
+        {
+          "param": "一次装配合格率",
+          "unit": "%",
+          "value": 85.0,
+          "min_24h": 85.0,
+          "max_24h": 98.66,
+          "avg_24h": 97.32,
+          "over_count_24h": 1,
+          "status": "紧急",
+          "normal_low": 96.0,
+          "normal_high": 100.0,
+          "note": "首件量产良率"
+        },
+        {
+          "param": "扭矩抽检合格率",
+          "unit": "%",
+          "value": 98.78,
+          "min_24h": 98.6,
+          "max_24h": 99.3,
+          "avg_24h": 98.99,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 98.0,
+          "normal_high": 100.0,
+          "note": "紧固质量抽检"
+        },
+        {
+          "param": "工装夹具定位精度",
+          "unit": "mm",
+          "value": 0.04,
+          "min_24h": 0.02,
+          "max_24h": 0.04,
+          "avg_24h": 0.03,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 0.05,
+          "note": "工装精度决定装配质量"
+        }
+      ]
+    }
+  ],
+  "alerts": [
+    {
+      "device_id": "TJ-01",
+      "device_name": "电池箱体弧焊产线",
+      "enterprise": "江苏天钧精密技术股份有限公司",
+      "param": "焊缝缺陷漏检率",
+      "unit": "%",
+      "value": 1.2,
+      "normal_range": "0.0~1.0",
+      "crit_range": "0.0~2.0",
+      "status": "预警",
+      "over_count": 1,
+      "action_hint": "48小时内复核质量趋势；若持续越界，组织QC分析与工艺排查。"
+    },
+    {
+      "device_id": "BJ-01",
+      "device_name": "五轴加工中心",
+      "enterprise": "无锡贝斯特精机股份有限公司",
+      "param": "关键尺寸CPK",
+      "unit": "-",
+      "value": 1.15,
+      "normal_range": "1.33~2.0",
+      "crit_range": "1.0~2.0",
+      "status": "严重",
+      "over_count": 1,
+      "action_hint": "当班隔离该批次产品，通知QC主管并暂停该线放行，排查根因。"
+    },
+    {
+      "device_id": "FQ-01",
+      "device_name": "非标装配自动化产线",
+      "enterprise": "苏州富强科技有限公司",
+      "param": "一次装配合格率",
+      "unit": "%",
+      "value": 85.0,
+      "normal_range": "96.0~100.0",
+      "crit_range": "89.0~100.0",
+      "status": "紧急",
+      "over_count": 1,
+      "action_hint": "立即停线扣留相关批次，启动质量事故响应，同步工程与客户质量部。"
+    }
+  ]
+}

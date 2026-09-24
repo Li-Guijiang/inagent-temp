@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>智能工厂 · 工作台</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="topbar">
+  <div class="brand">
+    <span class="logo">🏭</span>
+    <span class="title">智能工厂工作台</span>
+  </div>
+  <div class="clock" id="clock">--:--:--</div>
+</div>
+
+<!-- 首页：四大 Agent + 能耗看板 -->
+<div id="view-home" class="view active">
+  <div class="welcome">
+    <h1>早上好，操作工师傅</h1>
+    <p>今日待处理：<span id="home-todo">正在读取…</span></p>
+  </div>
+  <div class="section-title">🤖 车间智能助手（Agent）</div>
+  <div class="entries">
+    <button class="entry" data-view="alerts">
+      <span class="entry-icon">🔔</span>
+      <span class="entry-name">设备告警</span>
+      <span class="entry-tag">Agent·设备运维</span>
+      <span class="entry-desc">查看设备异常与处理提醒</span>
+    </button>
+    <button class="entry" data-view="quality">
+      <span class="entry-icon">📋</span>
+      <span class="entry-name">质检上报</span>
+      <span class="entry-tag">Agent·智能质检</span>
+      <span class="entry-desc">提交工位质检结果</span>
+    </button>
+    <button class="entry" data-view="process">
+      <span class="entry-icon">📑</span>
+      <span class="entry-name">工艺解析</span>
+      <span class="entry-tag">Agent·工艺知识</span>
+      <span class="entry-desc">智能解析工艺文档参数</span>
+    </button>
+    <button class="entry" data-view="report">
+      <span class="entry-icon">📊</span>
+      <span class="entry-name">生产报表</span>
+      <span class="entry-tag">Agent·产线数据</span>
+      <span class="entry-desc">一键生成生产综合报表</span>
+    </button>
+  </div>
+  <div class="section-title">📈 车间看板</div>
+  <div class="entries">
+    <button class="entry" data-view="energy">
+      <span class="entry-icon">💡</span>
+      <span class="entry-name">能耗看板</span>
+      <span class="entry-desc">查看车间能耗概览</span>
+    </button>
+  </div>
+</div>
+
+<!-- A4 设备告警 -->
+<div id="view-alerts" class="view">
+  <div class="view-head">
+    <button class="back" data-back="home">← 返回</button>
+    <h2>🔔 设备告警 <span class="agent-badge">Agent·设备运维</span></h2>
+    <span class="updated" id="alerts-updated"></span>
+  </div>
+  <div class="sumline" id="alerts-summary"></div>
+  <div class="result-grid" id="alerts-list"></div>
+</div>
+
+<!-- A1 质检上报 -->
+<div id="view-quality" class="view">
+  <div class="view-head">
+    <button class="back" data-back="home">← 返回</button>
+    <h2>📋 质检上报 <span class="agent-badge">Agent·智能质检</span></h2>
+    <span class="updated" id="quality-updated"></span>
+  </div>
+  <div class="sumline" id="quality-summary"></div>
+  <form class="card report-form" id="quality-form">
+    <div class="form-row">
+      <label>工位/产线<input name="line" required placeholder="如：1号装配线"></label>
+      <label>批次号<input name="batch" required placeholder="如：B-20260922-03"></label>
+    </div>
+    <div class="form-row">
+      <label>班次
+        <select name="shift">
+          <option>白班</option><option>中班</option><option>夜班</option>
+        </select>
+      </label>
+      <label>质检结果
+        <select name="result" required>
+          <option value="合格">合格 ✅</option>
+          <option value="待复检">待复检 ⚠️</option>
+          <option value="不合格">不合格 ❌</option>
+        </select>
+      </label>
+    </div>
+    <label>备注<input name="remark" placeholder="可选，填写异常现象等"></label>
+    <button type="submit" class="submit-btn">提交上报</button>
+    <div id="form-msg" class="form-msg"></div>
+  </form>
+  <div class="card">
+    <h3>今日已上报 <span id="report-count">0</span> 条</h3>
+    <div id="recent-reports" class="recent-list"></div>
+  </div>
+</div>
+
+<!-- A2 工艺解析 -->
+<div id="view-process" class="view">
+  <div class="view-head">
+    <button class="back" data-back="home">← 返回</button>
+    <h2>📑 工艺解析 <span class="agent-badge">Agent·工艺知识</span></h2>
+    <span class="updated" id="process-updated"></span>
+  </div>
+  <div class="card">
+    <h3>粘贴或上传工艺文档，智能提取参数</h3>
+    <textarea id="process-doc" rows="10" placeholder="在此粘贴工艺文档，格式示例：&#10;焊接电流：180 A&#10;焊接电压：24 V&#10;电流范围 170~190"></textarea>
+    <div class="form-actions">
+      <button class="btn-secondary" id="process-example">载入示例</button>
+      <button class="submit-btn" id="process-parse">开始解析</button>
+    </div>
+    <div id="process-msg" class="form-msg"></div>
+  </div>
+  <div class="card">
+    <h3>解析结果</h3>
+    <div class="param-grid" id="process-result"></div>
+  </div>
+</div>
+
+<!-- A3 生产报表 -->
+<div id="view-report" class="view">
+  <div class="view-head">
+    <button class="back" data-back="home">← 返回</button>
+    <h2>📊 生产报表 <span class="agent-badge">Agent·产线数据</span></h2>
+    <span class="updated" id="report-updated"></span>
+  </div>
+  <div class="card">
+    <h3>汇总全部车间模块，生成生产综合报表</h3>
+    <button class="submit-btn" id="report-gen">一键生成报表</button>
+    <div id="report-msg" class="form-msg"></div>
+    <div id="report-detail" class="report-detail"></div>
+  </div>
+</div>
+
+<!-- 能耗看板 -->
+<div id="view-energy" class="view">
+  <div class="view-head">
+    <button class="back" data-back="home">← 返回</button>
+    <h2>💡 能耗看板</h2>
+    <span class="updated" id="energy-updated"></span>
+  </div>
+  <div class="sumline" id="energy-summary"></div>
+  <div class="energy-grid" id="energy-list"></div>
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,617 @@
+{
+  "generated_at": "2026-09-22 02:37:25",
+  "data_time": "2026-09-22 02:37:25",
+  "data_source": "demo(模拟生成)",
+  "summary": {
+    "正常": 9,
+    "预警": 1,
+    "严重": 1,
+    "紧急": 1
+  },
+  "devices": [
+    {
+      "device_id": "TJ-01",
+      "device_name": "电池箱体弧焊机器人工作站",
+      "enterprise": "江苏天钧精密技术股份有限公司",
+      "status": "预警",
+      "worst_param": "焊枪温度",
+      "items": [
+        {
+          "param": "焊枪温度",
+          "unit": "℃",
+          "value": 66.5,
+          "min_24h": 31.22,
+          "max_24h": 66.5,
+          "avg_24h": 42.8,
+          "over_count_24h": 1,
+          "status": "预警",
+          "normal_low": 0.0,
+          "normal_high": 60.0,
+          "note": "焊接热源防护，超温易致焊缝缺陷"
+        },
+        {
+          "param": "保护气流量",
+          "unit": "L/min",
+          "value": 15.57,
+          "min_24h": 11.86,
+          "max_24h": 16.05,
+          "avg_24h": 14.93,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 10.0,
+          "normal_high": 20.0,
+          "note": "流量不足影响焊接质量"
+        },
+        {
+          "param": "送丝电机电流",
+          "unit": "A",
+          "value": 3.42,
+          "min_24h": 1.84,
+          "max_24h": 3.43,
+          "avg_24h": 2.53,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 3.5,
+          "note": "电流异常预示送丝机构卡滞"
+        }
+      ]
+    },
+    {
+      "device_id": "TJ-02",
+      "device_name": "FSW搅拌摩擦焊专机",
+      "enterprise": "江苏天钧精密技术股份有限公司",
+      "status": "正常",
+      "worst_param": null,
+      "items": [
+        {
+          "param": "主轴温度",
+          "unit": "℃",
+          "value": 41.01,
+          "min_24h": 26.35,
+          "max_24h": 46.38,
+          "avg_24h": 38.42,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 55.0,
+          "note": "搅拌摩擦焊密封环境温度关键"
+        },
+        {
+          "param": "顶锻压力",
+          "unit": "MPa",
+          "value": 5.28,
+          "min_24h": 4.07,
+          "max_24h": 6.67,
+          "avg_24h": 5.6,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 3.0,
+          "normal_high": 8.0,
+          "note": "顶锻压力窗口保证焊缝致密"
+        },
+        {
+          "param": "主轴振动",
+          "unit": "mm/s",
+          "value": 2.36,
+          "min_24h": 1.25,
+          "max_24h": 2.44,
+          "avg_24h": 1.82,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 2.5,
+          "note": "振动超标预示轴承磨损"
+        }
+      ]
+    },
+    {
+      "device_id": "BJ-01",
+      "device_name": "五轴加工中心",
+      "enterprise": "无锡贝斯特精机股份有限公司",
+      "status": "严重",
+      "worst_param": "主轴振动",
+      "items": [
+        {
+          "param": "主轴温度",
+          "unit": "℃",
+          "value": 39.51,
+          "min_24h": 23.03,
+          "max_24h": 43.13,
+          "avg_24h": 33.23,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 45.0,
+          "note": "高精密轴件加工对热变形敏感"
+        },
+        {
+          "param": "主轴振动",
+          "unit": "mm/s",
+          "value": 3.0,
+          "min_24h": 0.89,
+          "max_24h": 3.0,
+          "avg_24h": 1.33,
+          "over_count_24h": 1,
+          "status": "严重",
+          "normal_low": 0.0,
+          "normal_high": 1.8,
+          "note": "振动直接影响涡轮增压器叶轮精度"
+        },
+        {
+          "param": "冷却液温度",
+          "unit": "℃",
+          "value": 17.87,
+          "min_24h": 13.42,
+          "max_24h": 32.39,
+          "avg_24h": 21.99,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 30.0,
+          "note": "冷却波动导致尺寸漂移"
+        }
+      ]
+    },
+    {
+      "device_id": "BJ-02",
+      "device_name": "高精度珩磨机",
+      "enterprise": "无锡贝斯特精机股份有限公司",
+      "status": "正常",
+      "worst_param": null,
+      "items": [
+        {
+          "param": "珩磨头温度",
+          "unit": "℃",
+          "value": 24.27,
+          "min_24h": 18.61,
+          "max_24h": 38.21,
+          "avg_24h": 27.77,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 40.0,
+          "note": "珩磨热影响缸体孔一致性"
+        },
+        {
+          "param": "液压压力",
+          "unit": "MPa",
+          "value": 3.65,
+          "min_24h": 2.67,
+          "max_24h": 4.7,
+          "avg_24h": 3.61,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 2.0,
+          "normal_high": 5.0,
+          "note": "液压失压导致主轴掉落事故"
+        },
+        {
+          "param": "主轴转速偏差",
+          "unit": "%",
+          "value": 1.31,
+          "min_24h": 0.86,
+          "max_24h": 1.72,
+          "avg_24h": 1.31,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 2.0,
+          "note": "转速偏差影响珩磨网纹质量"
+        }
+      ]
+    },
+    {
+      "device_id": "HQ-01",
+      "device_name": "通用机器视觉检测线",
+      "enterprise": "苏州禾派阁电子科技有限公司",
+      "status": "正常",
+      "worst_param": null,
+      "items": [
+        {
+          "param": "相机温度",
+          "unit": "℃",
+          "value": 26.04,
+          "min_24h": 18.87,
+          "max_24h": 37.6,
+          "avg_24h": 28.46,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 40.0,
+          "note": "相机过热产生成像噪声"
+        },
+        {
+          "param": "光源亮度",
+          "unit": "%",
+          "value": 86.58,
+          "min_24h": 85.07,
+          "max_24h": 94.82,
+          "avg_24h": 90.09,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 80.0,
+          "normal_high": 100.0,
+          "note": "光源衰减直接降低检出率"
+        },
+        {
+          "param": "图像采集帧率",
+          "unit": "fps",
+          "value": 43.23,
+          "min_24h": 35.47,
+          "max_24h": 48.71,
+          "avg_24h": 41.15,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 20.0,
+          "normal_high": 60.0,
+          "note": "帧率过低导致漏检"
+        }
+      ]
+    },
+    {
+      "device_id": "JS-01",
+      "device_name": "AI视觉检测设备（2D/3D）",
+      "enterprise": "苏州聚晟视自动化设备有限公司",
+      "status": "正常",
+      "worst_param": null,
+      "items": [
+        {
+          "param": "相机温度",
+          "unit": "℃",
+          "value": 34.21,
+          "min_24h": 21.6,
+          "max_24h": 40.89,
+          "avg_24h": 28.77,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 42.0,
+          "note": "长时运行热漂移影响算法"
+        },
+        {
+          "param": "GPU负载",
+          "unit": "%",
+          "value": 61.87,
+          "min_24h": 35.64,
+          "max_24h": 69.44,
+          "avg_24h": 56.39,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 80.0,
+          "note": "算法算力瓶颈预警"
+        },
+        {
+          "param": "误检率",
+          "unit": "%",
+          "value": 1.17,
+          "min_24h": 0.74,
+          "max_24h": 1.31,
+          "avg_24h": 1.04,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 1.5,
+          "note": "误检率超限需重新标定"
+        }
+      ]
+    },
+    {
+      "device_id": "QY-01",
+      "device_name": "UTG超薄玻璃AOI检测设备",
+      "enterprise": "樵弋机器人科技（江阴）有限公司",
+      "status": "正常",
+      "worst_param": null,
+      "items": [
+        {
+          "param": "相机温度",
+          "unit": "℃",
+          "value": 33.1,
+          "min_24h": 14.83,
+          "max_24h": 36.86,
+          "avg_24h": 25.79,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 38.0,
+          "note": "超薄玻璃成像对热敏感"
+        },
+        {
+          "param": "检测节拍",
+          "unit": "s/片",
+          "value": 1.62,
+          "min_24h": 1.42,
+          "max_24h": 2.65,
+          "avg_24h": 2.05,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 3.0,
+          "note": "节拍超时影响产能承诺"
+        },
+        {
+          "param": "崩边漏检率",
+          "unit": "%",
+          "value": 0.4,
+          "min_24h": 0.23,
+          "max_24h": 0.44,
+          "avg_24h": 0.34,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 0.5,
+          "note": "崩边缺陷漏检风险最高的项"
+        }
+      ]
+    },
+    {
+      "device_id": "QY-02",
+      "device_name": "自动收片检测装置",
+      "enterprise": "樵弋机器人科技（江阴）有限公司",
+      "status": "正常",
+      "worst_param": null,
+      "items": [
+        {
+          "param": "传动电机温度",
+          "unit": "℃",
+          "value": 28.35,
+          "min_24h": 19.88,
+          "max_24h": 36.53,
+          "avg_24h": 29.64,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 42.0,
+          "note": "收片频繁启停电机易过热"
+        },
+        {
+          "param": "真空吸盘负压",
+          "unit": "kPa",
+          "value": -53.14,
+          "min_24h": -55.63,
+          "max_24h": -46.66,
+          "avg_24h": -50.07,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": -60.0,
+          "normal_high": -40.0,
+          "note": "负压不足导致玻璃吸附掉落"
+        }
+      ]
+    },
+    {
+      "device_id": "HG-01",
+      "device_name": "纺织上纱AGV",
+      "enterprise": "江苏赫伽力智能科技有限公司",
+      "status": "正常",
+      "worst_param": null,
+      "items": [
+        {
+          "param": "电池电压",
+          "unit": "V",
+          "value": 54.88,
+          "min_24h": 49.83,
+          "max_24h": 55.2,
+          "avg_24h": 52.89,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 48.0,
+          "normal_high": 57.6,
+          "note": "电压下限不足影响连续换纱"
+        },
+        {
+          "param": "驱动电机温度",
+          "unit": "℃",
+          "value": 39.52,
+          "min_24h": 28.67,
+          "max_24h": 54.52,
+          "avg_24h": 39.2,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 55.0,
+          "note": "驱动温升反映减速机构状态"
+        },
+        {
+          "param": "激光导航定位误差",
+          "unit": "mm",
+          "value": 7.57,
+          "min_24h": 4.87,
+          "max_24h": 8.64,
+          "avg_24h": 6.67,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 10.0,
+          "note": "定位偏差导致上纱对位失败"
+        }
+      ]
+    },
+    {
+      "device_id": "HG-02",
+      "device_name": "纺织复合移动机器人",
+      "enterprise": "江苏赫伽力智能科技有限公司",
+      "status": "正常",
+      "worst_param": null,
+      "items": [
+        {
+          "param": "轮毂电机温度",
+          "unit": "℃",
+          "value": 30.55,
+          "min_24h": 26.09,
+          "max_24h": 44.22,
+          "avg_24h": 36.22,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 52.0,
+          "note": "多机联动时易热堆积"
+        },
+        {
+          "param": "电池电量",
+          "unit": "%",
+          "value": 70.87,
+          "min_24h": 49.41,
+          "max_24h": 75.58,
+          "avg_24h": 64.16,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 30.0,
+          "normal_high": 100.0,
+          "note": "电量低于30%需进入充电调度"
+        },
+        {
+          "param": "定位偏差",
+          "unit": "mm",
+          "value": 4.29,
+          "min_24h": 3.27,
+          "max_24h": 7.09,
+          "avg_24h": 5.33,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 8.0,
+          "note": "落纱对位精度保障"
+        }
+      ]
+    },
+    {
+      "device_id": "GT-01",
+      "device_name": "DTiip工业互联网边缘网关",
+      "enterprise": "国投融合（无锡）科技有限公司",
+      "status": "正常",
+      "worst_param": null,
+      "items": [
+        {
+          "param": "CPU利用率",
+          "unit": "%",
+          "value": 54.73,
+          "min_24h": 32.4,
+          "max_24h": 58.26,
+          "avg_24h": 46.61,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 70.0,
+          "note": "平台服务稳定性关键指标"
+        },
+        {
+          "param": "内存占用率",
+          "unit": "%",
+          "value": 64.64,
+          "min_24h": 36.92,
+          "max_24h": 86.27,
+          "avg_24h": 53.05,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 75.0,
+          "note": "内存泄漏预警项"
+        },
+        {
+          "param": "网络丢包率",
+          "unit": "%",
+          "value": 0.77,
+          "min_24h": 0.44,
+          "max_24h": 0.98,
+          "avg_24h": 0.69,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 1.0,
+          "note": "数据上云链路质量"
+        }
+      ]
+    },
+    {
+      "device_id": "FQ-01",
+      "device_name": "非标装配自动化产线",
+      "enterprise": "苏州富强科技有限公司",
+      "status": "紧急",
+      "worst_param": "PLC通信连接状态",
+      "items": [
+        {
+          "param": "气缸压力",
+          "unit": "MPa",
+          "value": 0.53,
+          "min_24h": 0.51,
+          "max_24h": 0.63,
+          "avg_24h": 0.56,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.4,
+          "normal_high": 0.7,
+          "note": "装配夹紧力保证"
+        },
+        {
+          "param": "PLC通信连接状态",
+          "unit": "连接",
+          "value": 0.0,
+          "min_24h": 0.0,
+          "max_24h": 1.0,
+          "avg_24h": 0.96,
+          "over_count_24h": 1,
+          "status": "紧急",
+          "normal_low": 1.0,
+          "normal_high": 1.0,
+          "note": "1=连接 0=断连，断连即紧急"
+        },
+        {
+          "param": "导轨润滑液位",
+          "unit": "%",
+          "value": 67.71,
+          "min_24h": 47.29,
+          "max_24h": 82.55,
+          "avg_24h": 67.47,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 40.0,
+          "normal_high": 100.0,
+          "note": "润滑不足加速导轨磨损"
+        }
+      ]
+    }
+  ],
+  "alerts": [
+    {
+      "device_id": "TJ-01",
+      "device_name": "电池箱体弧焊机器人工作站",
+      "enterprise": "江苏天钧精密技术股份有限公司",
+      "param": "焊枪温度",
+      "unit": "℃",
+      "value": 66.5,
+      "normal_range": "0.0~60.0",
+      "crit_range": "0.0~75.0",
+      "status": "预警",
+      "over_count": 1,
+      "action_hint": "24小时内复核；若持续越界，联系设备工程师排查。"
+    },
+    {
+      "device_id": "BJ-01",
+      "device_name": "五轴加工中心",
+      "enterprise": "无锡贝斯特精机股份有限公司",
+      "param": "主轴振动",
+      "unit": "mm/s",
+      "value": 3.0,
+      "normal_range": "0.0~1.8",
+      "crit_range": "0.0~3.2",
+      "status": "严重",
+      "over_count": 1,
+      "action_hint": "当班处理：停止作业检查，必要时切换备用产线，并通报班组长。"
+    },
+    {
+      "device_id": "FQ-01",
+      "device_name": "非标装配自动化产线",
+      "enterprise": "苏州富强科技有限公司",
+      "param": "PLC通信连接状态",
+      "unit": "连接",
+      "value": 0.0,
+      "normal_range": "1.0~1.0",
+      "crit_range": "1.0~0.0",
+      "status": "紧急",
+      "over_count": 1,
+      "action_hint": "立即停机检修，同步通知设备工程师与安全管理，禁止带病运行。"
+    }
+  ]
+}

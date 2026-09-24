@@ -1,0 +1,439 @@
+{
+  "generated_at": "2026-09-24 02:12:26",
+  "data_time": "2026-09-24 02:12:26",
+  "data_source": "mcp(本地产线动态数据服务)",
+  "summary": {
+    "正常": 8,
+    "预警": 1,
+    "严重": 1,
+    "紧急": 1
+  },
+  "devices": [
+    {
+      "device_id": "TJ-01",
+      "device_name": "电池箱体弧焊工作站",
+      "enterprise": "江苏天钧精密技术股份有限公司",
+      "status": "严重",
+      "worst_param": "焊接电流偏差",
+      "items": [
+        {
+          "param": "焊接电流偏差",
+          "unit": "A",
+          "value": -11.28,
+          "min_24h": -11.28,
+          "max_24h": 3.03,
+          "avg_24h": 0.01,
+          "over_count_24h": 1,
+          "status": "严重",
+          "normal_low": -5.0,
+          "normal_high": 5.0,
+          "note": "电流波动影响焊缝成型"
+        },
+        {
+          "param": "焊接速度偏差",
+          "unit": "%",
+          "value": -0.05,
+          "min_24h": -2.07,
+          "max_24h": 3.08,
+          "avg_24h": 0.49,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": -5.0,
+          "normal_high": 5.0,
+          "note": "焊速偏差影响熔深"
+        },
+        {
+          "param": "焊接热输入波动",
+          "unit": "%",
+          "value": -1.47,
+          "min_24h": -3.96,
+          "max_24h": 4.01,
+          "avg_24h": 0.1,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": -8.0,
+          "normal_high": 8.0,
+          "note": "热输入一致性决定焊缝质量"
+        }
+      ]
+    },
+    {
+      "device_id": "TJ-02",
+      "device_name": "FSW搅拌摩擦焊专机",
+      "enterprise": "江苏天钧精密技术股份有限公司",
+      "status": "正常",
+      "worst_param": null,
+      "items": [
+        {
+          "param": "搅拌头转速偏差",
+          "unit": "%",
+          "value": -1.35,
+          "min_24h": -2.31,
+          "max_24h": 2.03,
+          "avg_24h": 0.11,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": -4.0,
+          "normal_high": 4.0,
+          "note": "FSW转速窗口窄"
+        },
+        {
+          "param": "顶锻压力波动",
+          "unit": "%",
+          "value": 0.28,
+          "min_24h": -3.21,
+          "max_24h": 1.97,
+          "avg_24h": 0.27,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": -6.0,
+          "normal_high": 6.0,
+          "note": "顶锻压力波动影响致密性"
+        }
+      ]
+    },
+    {
+      "device_id": "BJ-01",
+      "device_name": "五轴加工中心",
+      "enterprise": "无锡贝斯特精机股份有限公司",
+      "status": "紧急",
+      "worst_param": "换刀频次",
+      "items": [
+        {
+          "param": "刀具磨损率",
+          "unit": "%/h",
+          "value": 0.34,
+          "min_24h": 0.13,
+          "max_24h": 0.46,
+          "avg_24h": 0.34,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 0.5,
+          "note": "刀具磨损影响精度"
+        },
+        {
+          "param": "切削参数利用率",
+          "unit": "%",
+          "value": 83.92,
+          "min_24h": 80.92,
+          "max_24h": 95.89,
+          "avg_24h": 87.7,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 75.0,
+          "normal_high": 100.0,
+          "note": "切削效率优化空间"
+        },
+        {
+          "param": "换刀频次",
+          "unit": "次/日",
+          "value": 18.06,
+          "min_24h": 3.63,
+          "max_24h": 18.06,
+          "avg_24h": 6.31,
+          "over_count_24h": 3,
+          "status": "紧急",
+          "normal_low": 0.0,
+          "normal_high": 8.0,
+          "note": "换刀过于频繁降低OEE"
+        }
+      ]
+    },
+    {
+      "device_id": "BJ-02",
+      "device_name": "高精度珩磨机",
+      "enterprise": "无锡贝斯特精机股份有限公司",
+      "status": "正常",
+      "worst_param": null,
+      "items": [
+        {
+          "param": "珩磨头磨损率",
+          "unit": "%/h",
+          "value": 0.19,
+          "min_24h": 0.19,
+          "max_24h": 0.43,
+          "avg_24h": 0.3,
+          "over_count_24h": 3,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 0.4,
+          "note": "磨料寿命管理"
+        },
+        {
+          "param": "珩磨工艺节拍",
+          "unit": "s/件",
+          "value": 34.79,
+          "min_24h": 21.99,
+          "max_24h": 47.23,
+          "avg_24h": 31.78,
+          "over_count_24h": 1,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 45.0,
+          "note": "节拍优化平衡质量与产能"
+        }
+      ]
+    },
+    {
+      "device_id": "HQ-01",
+      "device_name": "通用机器视觉检测线",
+      "enterprise": "苏州禾派阁电子科技有限公司",
+      "status": "正常",
+      "worst_param": null,
+      "items": [
+        {
+          "param": "检测节拍超时率",
+          "unit": "%",
+          "value": 3.74,
+          "min_24h": 2.39,
+          "max_24h": 5.67,
+          "avg_24h": 3.59,
+          "over_count_24h": 2,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 5.0,
+          "note": "节拍过慢影响产线流转"
+        },
+        {
+          "param": "光源亮度衰减率",
+          "unit": "%",
+          "value": 1.98,
+          "min_24h": 1.2,
+          "max_24h": 2.8,
+          "avg_24h": 2.0,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 3.0,
+          "note": "光源衰减影响检出"
+        }
+      ]
+    },
+    {
+      "device_id": "JS-01",
+      "device_name": "AI视觉检测设备（2D/3D）",
+      "enterprise": "苏州聚晟视自动化设备有限公司",
+      "status": "正常",
+      "worst_param": null,
+      "items": [
+        {
+          "param": "模型推理延迟",
+          "unit": "ms",
+          "value": 72.88,
+          "min_24h": 35.05,
+          "max_24h": 72.88,
+          "avg_24h": 58.51,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 80.0,
+          "note": "推理延迟影响检测节拍"
+        },
+        {
+          "param": "模型误检迭代周期",
+          "unit": "天",
+          "value": 10.32,
+          "min_24h": 6.41,
+          "max_24h": 14.05,
+          "avg_24h": 10.66,
+          "over_count_24h": 1,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 14.0,
+          "note": "误检上升应触发模型再训练"
+        }
+      ]
+    },
+    {
+      "device_id": "QY-01",
+      "device_name": "UTG超薄玻璃AOI检测设备",
+      "enterprise": "樵弋机器人科技（江阴）有限公司",
+      "status": "正常",
+      "worst_param": null,
+      "items": [
+        {
+          "param": "成像灰度均匀度",
+          "unit": "%",
+          "value": 94.39,
+          "min_24h": 91.88,
+          "max_24h": 96.79,
+          "avg_24h": 94.79,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 90.0,
+          "normal_high": 100.0,
+          "note": "成像质量影响缺陷识别"
+        },
+        {
+          "param": "算法漏检率",
+          "unit": "%",
+          "value": 0.36,
+          "min_24h": 0.25,
+          "max_24h": 0.48,
+          "avg_24h": 0.37,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 0.5,
+          "note": "算法端漏检控制"
+        }
+      ]
+    },
+    {
+      "device_id": "HG-01",
+      "device_name": "纺织上纱AGV",
+      "enterprise": "江苏赫伽力智能科技有限公司",
+      "status": "预警",
+      "worst_param": "上纱工序节拍",
+      "items": [
+        {
+          "param": "上纱工序节拍",
+          "unit": "s/次",
+          "value": 100.41,
+          "min_24h": 38.69,
+          "max_24h": 100.41,
+          "avg_24h": 67.51,
+          "over_count_24h": 3,
+          "status": "预警",
+          "normal_low": 0.0,
+          "normal_high": 90.0,
+          "note": "自动化节拍优化"
+        },
+        {
+          "param": "定位对位成功率",
+          "unit": "%",
+          "value": 98.71,
+          "min_24h": 97.75,
+          "max_24h": 99.05,
+          "avg_24h": 98.44,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 97.0,
+          "normal_high": 100.0,
+          "note": "对位精度保障"
+        }
+      ]
+    },
+    {
+      "device_id": "HG-02",
+      "device_name": "纺织复合移动机器人",
+      "enterprise": "江苏赫伽力智能科技有限公司",
+      "status": "正常",
+      "worst_param": null,
+      "items": [
+        {
+          "param": "多机协同调度延迟",
+          "unit": "ms",
+          "value": 327.19,
+          "min_24h": 220.45,
+          "max_24h": 471.99,
+          "avg_24h": 340.56,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 500.0,
+          "note": "调度延迟影响协同效率"
+        }
+      ]
+    },
+    {
+      "device_id": "FQ-01",
+      "device_name": "非标装配自动化产线",
+      "enterprise": "苏州富强科技有限公司",
+      "status": "正常",
+      "worst_param": null,
+      "items": [
+        {
+          "param": "装配节拍达成率",
+          "unit": "%",
+          "value": 97.12,
+          "min_24h": 93.22,
+          "max_24h": 97.12,
+          "avg_24h": 95.18,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 90.0,
+          "normal_high": 100.0,
+          "note": "非标项目节拍管控"
+        },
+        {
+          "param": "工艺参数稳定率",
+          "unit": "%",
+          "value": 96.02,
+          "min_24h": 94.58,
+          "max_24h": 98.41,
+          "avg_24h": 96.26,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 92.0,
+          "normal_high": 100.0,
+          "note": "非标工艺一致性"
+        }
+      ]
+    },
+    {
+      "device_id": "GT-01",
+      "device_name": "DTiip工业互联网边缘网关",
+      "enterprise": "国投融合（无锡）科技有限公司",
+      "status": "正常",
+      "worst_param": null,
+      "items": [
+        {
+          "param": "数据采集时延",
+          "unit": "ms",
+          "value": 121.13,
+          "min_24h": 70.91,
+          "max_24h": 192.1,
+          "avg_24h": 141.16,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 200.0,
+          "note": "平台实时性对工艺监控的影响"
+        }
+      ]
+    }
+  ],
+  "alerts": [
+    {
+      "device_id": "TJ-01",
+      "device_name": "电池箱体弧焊工作站",
+      "enterprise": "江苏天钧精密技术股份有限公司",
+      "param": "焊接电流偏差",
+      "unit": "A",
+      "value": -11.28,
+      "normal_range": "-5.0~5.0",
+      "crit_range": "-12.0~12.0",
+      "status": "严重",
+      "over_count": 1,
+      "action_hint": "当班校正工艺参数，暂停该工序正常放行，工艺工程师介入确认。"
+    },
+    {
+      "device_id": "BJ-01",
+      "device_name": "五轴加工中心",
+      "enterprise": "无锡贝斯特精机股份有限公司",
+      "param": "换刀频次",
+      "unit": "次/日",
+      "value": 18.06,
+      "normal_range": "0.0~8.0",
+      "crit_range": "0.0~16.0",
+      "status": "紧急",
+      "over_count": 3,
+      "action_hint": "立即停线，封锁相关批次，工艺与质量联合排查，防止不合格品流出。"
+    },
+    {
+      "device_id": "HG-01",
+      "device_name": "纺织上纱AGV",
+      "enterprise": "江苏赫伽力智能科技有限公司",
+      "param": "上纱工序节拍",
+      "unit": "s/次",
+      "value": 100.41,
+      "normal_range": "0.0~90.0",
+      "crit_range": "0.0~120.0",
+      "status": "预警",
+      "over_count": 3,
+      "action_hint": "48小时内复核工艺参数趋势，必要时校准工艺窗口或调整参数设定值。"
+    }
+  ]
+}

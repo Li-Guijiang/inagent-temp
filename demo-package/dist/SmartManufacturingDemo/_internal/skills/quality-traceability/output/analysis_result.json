@@ -1,0 +1,391 @@
+{
+  "generated_at": "2026-09-24 09:19:11",
+  "data_time": "2026-09-24 09:19:11",
+  "data_source": "demo(模拟生成)",
+  "summary": {
+    "正常": 7,
+    "预警": 1,
+    "严重": 1,
+    "紧急": 1
+  },
+  "devices": [
+    {
+      "device_id": "GT-01",
+      "device_name": "DTiip工业互联网平台",
+      "enterprise": "国投融合（无锡）科技有限公司",
+      "status": "预警",
+      "worst_param": "批次追溯覆盖率",
+      "items": [
+        {
+          "param": "批次追溯覆盖率",
+          "unit": "%",
+          "value": 96.5,
+          "min_24h": 96.5,
+          "max_24h": 99.31,
+          "avg_24h": 98.89,
+          "over_count_24h": 1,
+          "status": "预警",
+          "normal_low": 98.0,
+          "normal_high": 100.0,
+          "note": "平台追溯核心指标"
+        },
+        {
+          "param": "质检数据归档及时率",
+          "unit": "%",
+          "value": 97.79,
+          "min_24h": 95.93,
+          "max_24h": 98.03,
+          "avg_24h": 97.47,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 95.0,
+          "normal_high": 100.0,
+          "note": "数据不及时导致追溯断链"
+        },
+        {
+          "param": "数据链路完整性",
+          "unit": "%",
+          "value": 99.34,
+          "min_24h": 97.98,
+          "max_24h": 99.34,
+          "avg_24h": 98.57,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 97.0,
+          "normal_high": 100.0,
+          "note": "全链路数据完整性"
+        }
+      ]
+    },
+    {
+      "device_id": "TJ-01",
+      "device_name": "电池箱体弧焊产线",
+      "enterprise": "江苏天钧精密技术股份有限公司",
+      "status": "正常",
+      "worst_param": null,
+      "items": [
+        {
+          "param": "焊接批次-成品绑定率",
+          "unit": "%",
+          "value": 99.09,
+          "min_24h": 98.56,
+          "max_24h": 99.29,
+          "avg_24h": 99.0,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 98.0,
+          "normal_high": 100.0,
+          "note": "批次追溯到焊接参数"
+        },
+        {
+          "param": "箱体序列码赋码率",
+          "unit": "%",
+          "value": 99.46,
+          "min_24h": 99.21,
+          "max_24h": 99.73,
+          "avg_24h": 99.52,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 99.0,
+          "normal_high": 100.0,
+          "note": "一物一码覆盖"
+        },
+        {
+          "param": "热处理记录关联率",
+          "unit": "%",
+          "value": 99.23,
+          "min_24h": 97.89,
+          "max_24h": 99.32,
+          "avg_24h": 98.59,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 97.0,
+          "normal_high": 100.0,
+          "note": "工艺记录关联"
+        }
+      ]
+    },
+    {
+      "device_id": "BJ-01",
+      "device_name": "五轴加工中心",
+      "enterprise": "无锡贝斯特精机股份有限公司",
+      "status": "正常",
+      "worst_param": null,
+      "items": [
+        {
+          "param": "零件序列号追溯覆盖率",
+          "unit": "%",
+          "value": 99.68,
+          "min_24h": 99.31,
+          "max_24h": 99.76,
+          "avg_24h": 99.54,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 99.0,
+          "normal_high": 100.0,
+          "note": "精密件全生命周期追溯"
+        },
+        {
+          "param": "原材料批次关联率",
+          "unit": "%",
+          "value": 99.09,
+          "min_24h": 98.59,
+          "max_24h": 99.29,
+          "avg_24h": 99.0,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 98.0,
+          "normal_high": 100.0,
+          "note": "原材料来料溯源"
+        }
+      ]
+    },
+    {
+      "device_id": "BJ-02",
+      "device_name": "高精度珩磨机",
+      "enterprise": "无锡贝斯特精机股份有限公司",
+      "status": "正常",
+      "worst_param": null,
+      "items": [
+        {
+          "param": "加工参数存档完整率",
+          "unit": "%",
+          "value": 98.19,
+          "min_24h": 97.74,
+          "max_24h": 99.64,
+          "avg_24h": 98.6,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 97.0,
+          "normal_high": 100.0,
+          "note": "参数存档支撑反查"
+        }
+      ]
+    },
+    {
+      "device_id": "HQ-01",
+      "device_name": "通用机器视觉检测线",
+      "enterprise": "苏州禾派阁电子科技有限公司",
+      "status": "正常",
+      "worst_param": null,
+      "items": [
+        {
+          "param": "检测结果入库率",
+          "unit": "%",
+          "value": 98.81,
+          "min_24h": 98.53,
+          "max_24h": 99.51,
+          "avg_24h": 98.99,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 98.0,
+          "normal_high": 100.0,
+          "note": "检测数据入库"
+        },
+        {
+          "param": "缺陷图像关联率",
+          "unit": "%",
+          "value": 98.21,
+          "min_24h": 96.89,
+          "max_24h": 99.6,
+          "avg_24h": 98.15,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 96.0,
+          "normal_high": 100.0,
+          "note": "缺陷图与工件绑定"
+        }
+      ]
+    },
+    {
+      "device_id": "JS-01",
+      "device_name": "AI视觉检测设备（2D/3D）",
+      "enterprise": "苏州聚晟视自动化设备有限公司",
+      "status": "正常",
+      "worst_param": null,
+      "items": [
+        {
+          "param": "检测工单追溯完整率",
+          "unit": "%",
+          "value": 98.91,
+          "min_24h": 98.46,
+          "max_24h": 99.32,
+          "avg_24h": 98.91,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 98.0,
+          "normal_high": 100.0,
+          "note": "工单-检测-报告闭环"
+        },
+        {
+          "param": "模型判定记录留存率",
+          "unit": "%",
+          "value": 98.35,
+          "min_24h": 97.82,
+          "max_24h": 99.22,
+          "avg_24h": 98.53,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 97.0,
+          "normal_high": 100.0,
+          "note": "AI判定结果可追溯"
+        }
+      ]
+    },
+    {
+      "device_id": "QY-01",
+      "device_name": "UTG超薄玻璃AOI检测设备",
+      "enterprise": "樵弋机器人科技（江阴）有限公司",
+      "status": "严重",
+      "worst_param": "玻璃批次-缺陷数据关联率",
+      "items": [
+        {
+          "param": "玻璃批次-缺陷数据关联率",
+          "unit": "%",
+          "value": 93.5,
+          "min_24h": 93.5,
+          "max_24h": 99.48,
+          "avg_24h": 98.79,
+          "over_count_24h": 1,
+          "status": "严重",
+          "normal_low": 98.0,
+          "normal_high": 100.0,
+          "note": "缺陷批次正向/反向追溯"
+        },
+        {
+          "param": "检测报告生成及时率",
+          "unit": "%",
+          "value": 98.32,
+          "min_24h": 97.55,
+          "max_24h": 98.87,
+          "avg_24h": 98.11,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 96.0,
+          "normal_high": 100.0,
+          "note": "报告发布及时性"
+        }
+      ]
+    },
+    {
+      "device_id": "HG-01",
+      "device_name": "纺织上纱AGV",
+      "enterprise": "江苏赫伽力智能科技有限公司",
+      "status": "正常",
+      "worst_param": null,
+      "items": [
+        {
+          "param": "上纱工序记录完整率",
+          "unit": "%",
+          "value": 98.84,
+          "min_24h": 97.94,
+          "max_24h": 99.32,
+          "avg_24h": 98.45,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 97.0,
+          "normal_high": 100.0,
+          "note": "工序执行留痕"
+        }
+      ]
+    },
+    {
+      "device_id": "HG-02",
+      "device_name": "纺织复合移动机器人",
+      "enterprise": "江苏赫伽力智能科技有限公司",
+      "status": "正常",
+      "worst_param": null,
+      "items": [
+        {
+          "param": "装配记录追溯完整率",
+          "unit": "%",
+          "value": 98.72,
+          "min_24h": 97.74,
+          "max_24h": 99.0,
+          "avg_24h": 98.51,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 97.0,
+          "normal_high": 100.0,
+          "note": "装配过程可追溯"
+        }
+      ]
+    },
+    {
+      "device_id": "FQ-01",
+      "device_name": "非标装配自动化产线",
+      "enterprise": "苏州富强科技有限公司",
+      "status": "紧急",
+      "worst_param": "工单-批次锁定率",
+      "items": [
+        {
+          "param": "工单-批次锁定率",
+          "unit": "%",
+          "value": 94.0,
+          "min_24h": 94.0,
+          "max_24h": 99.67,
+          "avg_24h": 99.26,
+          "over_count_24h": 1,
+          "status": "紧急",
+          "normal_low": 99.0,
+          "normal_high": 100.0,
+          "note": "工单批次锁定防混料"
+        },
+        {
+          "param": "装配日志留存完整率",
+          "unit": "%",
+          "value": 99.34,
+          "min_24h": 98.38,
+          "max_24h": 99.54,
+          "avg_24h": 98.96,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 98.0,
+          "normal_high": 100.0,
+          "note": "日志留存支撑售后溯源"
+        }
+      ]
+    }
+  ],
+  "alerts": [
+    {
+      "device_id": "GT-01",
+      "device_name": "DTiip工业互联网平台",
+      "enterprise": "国投融合（无锡）科技有限公司",
+      "param": "批次追溯覆盖率",
+      "unit": "%",
+      "value": 96.5,
+      "normal_range": "98.0~100.0",
+      "crit_range": "92.0~100.0",
+      "status": "预警",
+      "over_count": 1,
+      "action_hint": "48小时内核查数据链路，补充缺失记录，防止追溯断链扩大化。"
+    },
+    {
+      "device_id": "QY-01",
+      "device_name": "UTG超薄玻璃AOI检测设备",
+      "enterprise": "樵弋机器人科技（江阴）有限公司",
+      "param": "玻璃批次-缺陷数据关联率",
+      "unit": "%",
+      "value": 93.5,
+      "normal_range": "98.0~100.0",
+      "crit_range": "92.0~100.0",
+      "status": "严重",
+      "over_count": 1,
+      "action_hint": "当班排查追溯断链点，核实相关批次影响范围，必要时通知客户质量部。"
+    },
+    {
+      "device_id": "FQ-01",
+      "device_name": "非标装配自动化产线",
+      "enterprise": "苏州富强科技有限公司",
+      "param": "工单-批次锁定率",
+      "unit": "%",
+      "value": 94.0,
+      "normal_range": "99.0~100.0",
+      "crit_range": "95.0~100.0",
+      "status": "紧急",
+      "over_count": 1,
+      "action_hint": "立即冻结受影响批次销售与发运，启动全面追溯核查，排除产品召回风险。"
+    }
+  ]
+}

@@ -1,0 +1,448 @@
+{
+  "generated_at": "2026-09-24 02:12:26",
+  "data_time": "2026-09-24 02:12:26",
+  "data_source": "mcp(本地产线动态数据服务)",
+  "summary": {
+    "正常": 10,
+    "预警": 0,
+    "严重": 1,
+    "紧急": 1
+  },
+  "devices": [
+    {
+      "device_id": "TJ-01",
+      "device_name": "电池箱体弧焊工作站",
+      "enterprise": "江苏天钧精密技术股份有限公司",
+      "status": "严重",
+      "worst_param": "压缩空气流量",
+      "items": [
+        {
+          "param": "单位件焊接能耗",
+          "unit": "kWh/件",
+          "value": 2.59,
+          "min_24h": 1.25,
+          "max_24h": 3.4,
+          "avg_24h": 2.33,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 3.5,
+          "note": "弧焊产线能耗基线"
+        },
+        {
+          "param": "压缩空气流量",
+          "unit": "m³/h",
+          "value": 146.63,
+          "min_24h": 34.58,
+          "max_24h": 146.63,
+          "avg_24h": 87.49,
+          "over_count_24h": 2,
+          "status": "严重",
+          "normal_low": 0.0,
+          "normal_high": 120.0,
+          "note": "气路泄漏会拉高能耗"
+        }
+      ]
+    },
+    {
+      "device_id": "TJ-02",
+      "device_name": "FSW搅拌摩擦焊专机",
+      "enterprise": "江苏天钧精密技术股份有限公司",
+      "status": "正常",
+      "worst_param": null,
+      "items": [
+        {
+          "param": "主轴负载率",
+          "unit": "%",
+          "value": 48.82,
+          "min_24h": 48.82,
+          "max_24h": 74.6,
+          "avg_24h": 63.3,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 40.0,
+          "normal_high": 85.0,
+          "note": "负载异常预示机械故障"
+        }
+      ]
+    },
+    {
+      "device_id": "BJ-01",
+      "device_name": "五轴加工中心",
+      "enterprise": "无锡贝斯特精机股份有限公司",
+      "status": "正常",
+      "worst_param": null,
+      "items": [
+        {
+          "param": "单位件切削电耗",
+          "unit": "kWh/件",
+          "value": 8.38,
+          "min_24h": 5.74,
+          "max_24h": 11.56,
+          "avg_24h": 8.91,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 12.0,
+          "note": "高精密加工能耗基线"
+        },
+        {
+          "param": "待机功耗",
+          "unit": "kW",
+          "value": 4.72,
+          "min_24h": 3.17,
+          "max_24h": 5.16,
+          "avg_24h": 4.23,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 6.0,
+          "note": "待机能耗反映停机管理"
+        }
+      ]
+    },
+    {
+      "device_id": "BJ-02",
+      "device_name": "高精度珩磨机",
+      "enterprise": "无锡贝斯特精机股份有限公司",
+      "status": "正常",
+      "worst_param": null,
+      "items": [
+        {
+          "param": "单位件珩磨能耗",
+          "unit": "kWh/件",
+          "value": 1.36,
+          "min_24h": 0.69,
+          "max_24h": 2.58,
+          "avg_24h": 1.68,
+          "over_count_24h": 2,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 2.2,
+          "note": "珩磨电耗基线"
+        },
+        {
+          "param": "液压泵运行功率",
+          "unit": "kW",
+          "value": 3.89,
+          "min_24h": 2.29,
+          "max_24h": 5.22,
+          "avg_24h": 3.77,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 5.5,
+          "note": "液压系统能耗占比高"
+        }
+      ]
+    },
+    {
+      "device_id": "HQ-01",
+      "device_name": "通用机器视觉检测线",
+      "enterprise": "苏州禾派阁电子科技有限公司",
+      "status": "正常",
+      "worst_param": null,
+      "items": [
+        {
+          "param": "单线日耗电量",
+          "unit": "kWh/日",
+          "value": 26.68,
+          "min_24h": 17.47,
+          "max_24h": 40.59,
+          "avg_24h": 29.41,
+          "over_count_24h": 1,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 40.0,
+          "note": "视觉检测线电力基线"
+        },
+        {
+          "param": "相机光源功率",
+          "unit": "W",
+          "value": 241.52,
+          "min_24h": 133.14,
+          "max_24h": 327.53,
+          "avg_24h": 211.4,
+          "over_count_24h": 1,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 300.0,
+          "note": "光源为主能耗部件"
+        }
+      ]
+    },
+    {
+      "device_id": "JS-01",
+      "device_name": "AI视觉检测设备（2D/3D）",
+      "enterprise": "苏州聚晟视自动化设备有限公司",
+      "status": "正常",
+      "worst_param": null,
+      "items": [
+        {
+          "param": "GPU功耗",
+          "unit": "W",
+          "value": 275.46,
+          "min_24h": 139.55,
+          "max_24h": 338.38,
+          "avg_24h": 250.3,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 350.0,
+          "note": "AI推理算力能耗"
+        },
+        {
+          "param": "整机日耗电量",
+          "unit": "kWh/日",
+          "value": 38.79,
+          "min_24h": 25.66,
+          "max_24h": 59.55,
+          "avg_24h": 39.43,
+          "over_count_24h": 1,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 55.0,
+          "note": "智能检测整机能耗"
+        }
+      ]
+    },
+    {
+      "device_id": "QY-01",
+      "device_name": "UTG超薄玻璃AOI检测设备",
+      "enterprise": "樵弋机器人科技（江阴）有限公司",
+      "status": "正常",
+      "worst_param": null,
+      "items": [
+        {
+          "param": "单位片检测能耗",
+          "unit": "kWh/千片",
+          "value": 5.64,
+          "min_24h": 4.21,
+          "max_24h": 8.0,
+          "avg_24h": 5.61,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 8.0,
+          "note": "光学检测能耗基线"
+        },
+        {
+          "param": "真空泵功耗",
+          "unit": "kW",
+          "value": 0.92,
+          "min_24h": 0.92,
+          "max_24h": 2.57,
+          "avg_24h": 1.75,
+          "over_count_24h": 1,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 2.5,
+          "note": "真空系统能耗"
+        }
+      ]
+    },
+    {
+      "device_id": "QY-02",
+      "device_name": "自动收片检测装置",
+      "enterprise": "樵弋机器人科技（江阴）有限公司",
+      "status": "正常",
+      "worst_param": null,
+      "items": [
+        {
+          "param": "伺服驱动功耗",
+          "unit": "kW",
+          "value": 1.65,
+          "min_24h": 1.42,
+          "max_24h": 3.24,
+          "avg_24h": 2.24,
+          "over_count_24h": 1,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 3.0,
+          "note": "频繁启停收片装置能耗"
+        }
+      ]
+    },
+    {
+      "device_id": "HG-01",
+      "device_name": "纺织上纱AGV",
+      "enterprise": "江苏赫伽力智能科技有限公司",
+      "status": "紧急",
+      "worst_param": "驱动电机温升",
+      "items": [
+        {
+          "param": "单车单班充电电量",
+          "unit": "kWh/班",
+          "value": 10.05,
+          "min_24h": 3.82,
+          "max_24h": 10.05,
+          "avg_24h": 6.17,
+          "over_count_24h": 1,
+          "status": "预警",
+          "normal_low": 0.0,
+          "normal_high": 9.0,
+          "note": "AGV续航与能耗"
+        },
+        {
+          "param": "驱动电机温升",
+          "unit": "℃",
+          "value": 54.85,
+          "min_24h": 18.69,
+          "max_24h": 54.85,
+          "avg_24h": 27.53,
+          "over_count_24h": 1,
+          "status": "紧急",
+          "normal_low": 0.0,
+          "normal_high": 40.0,
+          "note": "温升上升预示能耗效率下降"
+        }
+      ]
+    },
+    {
+      "device_id": "HG-02",
+      "device_name": "纺织复合移动机器人",
+      "enterprise": "江苏赫伽力智能科技有限公司",
+      "status": "正常",
+      "worst_param": null,
+      "items": [
+        {
+          "param": "单机日耗电量",
+          "unit": "kWh/日",
+          "value": 5.5,
+          "min_24h": 4.98,
+          "max_24h": 12.09,
+          "avg_24h": 8.88,
+          "over_count_24h": 1,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 12.0,
+          "note": "复合机器人能耗基线"
+        },
+        {
+          "param": "充电效率",
+          "unit": "%",
+          "value": 90.33,
+          "min_24h": 89.08,
+          "max_24h": 95.66,
+          "avg_24h": 92.12,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 85.0,
+          "normal_high": 100.0,
+          "note": "充电效率下降增加能耗"
+        }
+      ]
+    },
+    {
+      "device_id": "GT-01",
+      "device_name": "DTiip工业互联网边缘网关",
+      "enterprise": "国投融合（无锡）科技有限公司",
+      "status": "正常",
+      "worst_param": null,
+      "items": [
+        {
+          "param": "机房PUE",
+          "unit": "-",
+          "value": 1.22,
+          "min_24h": 0.75,
+          "max_24h": 1.34,
+          "avg_24h": 1.07,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 1.5,
+          "note": "平台机房能效指标"
+        },
+        {
+          "param": "服务器CPU占用率",
+          "unit": "%",
+          "value": 49.53,
+          "min_24h": 31.65,
+          "max_24h": 79.61,
+          "avg_24h": 51.83,
+          "over_count_24h": 1,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 75.0,
+          "note": "高负载拉高能耗"
+        }
+      ]
+    },
+    {
+      "device_id": "FQ-01",
+      "device_name": "非标装配自动化产线",
+      "enterprise": "苏州富强科技有限公司",
+      "status": "正常",
+      "worst_param": null,
+      "items": [
+        {
+          "param": "单位产品装配能耗",
+          "unit": "kWh/件",
+          "value": 1.17,
+          "min_24h": 0.8,
+          "max_24h": 1.67,
+          "avg_24h": 1.19,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 1.8,
+          "note": "非标产线能耗基线"
+        },
+        {
+          "param": "气源系统泄漏率",
+          "unit": "%",
+          "value": 3.65,
+          "min_24h": 2.45,
+          "max_24h": 4.93,
+          "avg_24h": 3.77,
+          "over_count_24h": 0,
+          "status": "正常",
+          "normal_low": 0.0,
+          "normal_high": 5.0,
+          "note": "压缩空气泄漏是最常见浪费"
+        }
+      ]
+    }
+  ],
+  "alerts": [
+    {
+      "device_id": "TJ-01",
+      "device_name": "电池箱体弧焊工作站",
+      "enterprise": "江苏天钧精密技术股份有限公司",
+      "param": "压缩空气流量",
+      "unit": "m³/h",
+      "value": 146.63,
+      "normal_range": "0.0~120.0",
+      "crit_range": "0.0~160.0",
+      "status": "严重",
+      "over_count": 2,
+      "action_hint": "当班排查高能耗原因（异常负载、气路泄漏、温升），开展专项能耗审计。"
+    },
+    {
+      "device_id": "HG-01",
+      "device_name": "纺织上纱AGV",
+      "enterprise": "江苏赫伽力智能科技有限公司",
+      "param": "单车单班充电电量",
+      "unit": "kWh/班",
+      "value": 10.05,
+      "normal_range": "0.0~9.0",
+      "crit_range": "0.0~12.0",
+      "status": "预警",
+      "over_count": 1,
+      "action_hint": "48小时内复核能耗趋势，检查是否存在空转/待机时长上升，必要时调整排产。"
+    },
+    {
+      "device_id": "HG-01",
+      "device_name": "纺织上纱AGV",
+      "enterprise": "江苏赫伽力智能科技有限公司",
+      "param": "驱动电机温升",
+      "unit": "℃",
+      "value": 54.85,
+      "normal_range": "0.0~40.0",
+      "crit_range": "0.0~52.0",
+      "status": "紧急",
+      "over_count": 1,
+      "action_hint": "立即停机检查能耗急剧异常点（疑似故障/泄漏），同步通知设备与能源管理。"
+    }
+  ]
+}
